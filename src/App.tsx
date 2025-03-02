@@ -12,7 +12,6 @@ function App() {
   }
 
   return (
-
     <QueryClientProvider client={queryClient}>
       <div className="flex flex-col w-full h-full items-center px-4 bg-gray-200">
         <div className="max-w-2xl w-full flex flex-col gap-5">
@@ -21,7 +20,6 @@ function App() {
           {activeStation.length == 4 && <WeatherCard station={activeStation} />}
         </div>
       </div>
-
     </QueryClientProvider>
   )
 }
